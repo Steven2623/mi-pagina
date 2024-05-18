@@ -219,6 +219,12 @@ button:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* Ajusta el ancho para que las tarjetas sean más grandes */
+        margin: 10px 0; /* Para asegurarnos de que haya espacio entre las tarjetas en pantallas pequeñas */
+    }
+
 
 footer {
     background-image:url("../Imagenes/diseñoux.png") ;
