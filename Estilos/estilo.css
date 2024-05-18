@@ -172,24 +172,22 @@ button:hover {
     margin: 20px 0;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: calc(33.333% - 20px);
+    max-width: 250px;
+    margin: 10px;
     text-align: center;
-    width: 200px;
 }
 
 .card img {
@@ -198,16 +196,14 @@ button:hover {
 }
 
 .card button {
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    background-color: #cccccc;
-    padding: 30px;
+    background-color: #2980b9;
+    color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
-}
-
-.card button:hover {
-    background-color: #999999;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 footer {
