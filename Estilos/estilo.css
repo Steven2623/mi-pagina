@@ -171,7 +171,6 @@ button:hover {
     gap: 20px;
     margin: 20px 0;
 }
-
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +212,14 @@ button:hover {
     background-color: #1c5d8c;
 }
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+
 footer {
     background-image:url("../Imagenes/diseñoux.png") ;
     background-repeat: no-repeat;
@@ -223,10 +230,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 600px) {
-    .carousel-slide img {
-        width: 100%;
-    }
+
 
     .profile-picture {
         width: 150px;
